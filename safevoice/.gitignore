@@ -1,0 +1,37 @@
+# Flutter
+safevoice_app/build/
+safevoice_app/.dart_tool/
+safevoice_app/.flutter-plugins
+safevoice_app/.flutter-plugins-dependencies
+safevoice_app/android/.gradle/
+safevoice_app/android/app/google-services.json
+safevoice_app/android/local.properties
+
+# .NET Backend
+safevoice_backend/**/bin/
+safevoice_backend/**/obj/
+safevoice_backend/**/*.user
+
+# Next.js Portal
+safevoice_portal/.next/
+safevoice_portal/node_modules/
+safevoice_portal/.env.local
+
+# Python AI
+safevoice_ai/__pycache__/
+safevoice_ai/*.pyc
+safevoice_ai/.venv/
+
+# Secrets
+**/appsettings.Production.json
+**/appsettings.*.json
+!**/appsettings.json
+!**/appsettings.Development.json
+**/.env
+**/.env.production
+**/.env.local
+**/evidence_uploads/
+
+# OS
+.DS_Store
+Thumbs.db

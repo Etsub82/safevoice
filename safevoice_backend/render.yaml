@@ -1,0 +1,27 @@
+services:
+  - type: web
+    name: safevoice-api
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: ASPNETCORE_ENVIRONMENT
+        value: Production
+      - key: ConnectionStrings__DefaultConnection
+        sync: false          # set manually in Render dashboard
+      - key: Jwt__Key
+        sync: false          # set manually — min 32 chars
+      - key: Jwt__Issuer
+        value: safevoice-api
+      - key: Jwt__Audience
+        value: safevoice-app
+      - key: Jwt__ExpiryMinutes
+        value: "60"
+      - key: Portal__Origin
+        sync: false          # set to your Vercel/Netlify portal URL
+      - key: AiService__BaseUrl
+        value: http://localhost:8000
+      - key: Demo__Enabled
+        value: "false"

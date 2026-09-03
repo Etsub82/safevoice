@@ -1,0 +1,105 @@
+{
+  "@@locale": "en",
+  "appTitle": "SafeVoice",
+  "appTagline": "Your safety, your voice",
+  "signIn": "Sign In",
+  "signUp": "Sign Up",
+  "createAccount": "Create Account",
+  "phoneNumber": "Phone Number",
+  "password": "Password",
+  "forgotPassword": "Forgot Password?",
+  "reportAnonymously": "Report Anonymously",
+  "newReport": "New Report",
+  "myCases": "My Cases",
+  "settings": "Settings",
+  "language": "Language",
+  "selectLanguage": "Select Language",
+  "emergencyContacts": "Emergency Contacts",
+  "sos": "SOS",
+  "sosAlert": "SOS Alert",
+  "cancelSos": "Cancel SOS",
+  "incidentType": "Incident Type",
+  "description": "Description",
+  "incidentDate": "Incident Date",
+  "location": "Location",
+  "submitReport": "Submit Report",
+  "saveDraft": "Save Draft",
+  "caseDetails": "Case Details",
+  "caseId": "Case ID",
+  "status": "Status",
+  "statusSubmitted": "Submitted",
+  "statusUnderReview": "Under Review",
+  "statusAssigned": "Assigned",
+  "statusInvestigation": "Investigation In Progress",
+  "statusResolved": "Resolved",
+  "statusClosed": "Closed",
+  "recordVoice": "Record Description by Voice",
+  "reviewTranscription": "Review Transcription",
+  "useTranscription": "Use This Transcription",
+  "discardTranscription": "Discard and Type Manually",
+  "noConnection": "No internet connection",
+  "pendingSync": "{count} item(s) pending sync",
+  "@pendingSync": {
+    "placeholders": {
+      "count": {"type": "int"}
+    }
+  },
+  "sosCountdown": "Sending in {seconds}...",
+  "@sosCountdown": {
+    "placeholders": {
+      "seconds": {"type": "int"}
+    }
+  },
+  "anonymousDisclaimer": "You are submitting anonymously. Note: anonymous reports may limit our ability to follow up and provide support.",
+  "anonymousCaseId": "Your anonymous case ID: {id}",
+  "@anonymousCaseId": {
+    "placeholders": {
+      "id": {"type": "String"}
+    }
+  },
+  "signOut": "Sign Out",
+  "signOutConfirm": "Are you sure you want to sign out?",
+  "cancel": "Cancel",
+  "continue": "Continue",
+  "verify": "Verify",
+  "resendCode": "Resend Code",
+  "resendCodeIn": "Resend code in {seconds}s",
+  "@resendCodeIn": {
+    "placeholders": {
+      "seconds": {"type": "int"}
+    }
+  },
+  "otpTitle": "Verify Phone Number",
+  "otpSubtitle": "Enter the 6-digit code sent to {phone}",
+  "@otpSubtitle": {
+    "placeholders": {
+      "phone": {"type": "String"}
+    }
+  },
+  "resetPassword": "Reset Password",
+  "newPassword": "New Password",
+  "passwordRequirements": "Min 8 characters, at least 1 letter and 1 digit",
+  "savedDrafts": "Saved Drafts",
+  "noDrafts": "No saved drafts",
+  "physicalViolence": "Physical Violence",
+  "sexualViolence": "Sexual Violence",
+  "psychologicalViolence": "Psychological Violence",
+  "economicViolence": "Economic Violence",
+  "other": "Other",
+  "evidenceUploaded": "Evidence uploaded and removed from device",
+  "max5Contacts": "Maximum 5 emergency contacts allowed",
+  "addContact": "Add Emergency Contact",
+  "contactName": "Name",
+  "contactPhone": "Phone Number",
+  "noContacts": "No emergency contacts added",
+  "noContactsHint": "Add up to 5 people who will be notified when you trigger SOS",
+  "iAmRegistering": "I am registering as",
+  "victim": "Victim",
+  "guardian": "Guardian (reporting for a child)",
+  "witness": "Witness",
+  "childInfo": "Child's Information",
+  "childName": "Child's Name",
+  "relationship": "Your Relationship to Child",
+  "preferredLanguage": "Preferred Language",
+  "displayName": "Display Name (optional)"
+}

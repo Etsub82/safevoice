@@ -1,0 +1,84 @@
+name: safevoice_app
+description: SafeVoice - GBV Reporting and Case Management Mobile App
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # State management
+  flutter_bloc: ^8.1.4
+  equatable: ^2.0.5
+
+  # Networking
+  dio: ^5.4.3
+
+  # Local database (encrypted SQLite)
+  drift: ^2.18.0
+  sqflite: ^2.3.3+1
+
+  # Secure storage
+  flutter_secure_storage: ^9.0.0
+
+  # Navigation
+  go_router: ^13.2.0
+
+  # Location
+  geolocator: ^11.0.0
+
+  # Audio recording
+  record: ^5.1.2
+
+  # Connectivity
+  connectivity_plus: ^6.0.3
+
+  # File picker
+  file_picker: ^8.0.3
+
+  # Image picker (camera + gallery)
+  image_picker: ^1.1.2
+
+  # Encryption
+  pointycastle: ^3.9.1
+  encrypt: ^5.0.3
+
+  # Firebase
+  firebase_core: ^2.30.1
+  firebase_messaging: ^14.9.1
+
+  # Biometric auth
+  local_auth: ^2.2.0
+
+  # Utilities
+  uuid: ^4.4.0
+  path_provider: ^2.1.3
+  intl: ^0.20.3
+  json_annotation: ^4.9.0
+  dartz: ^0.10.1
+  get_it: ^7.6.7
+  url_launcher: ^6.3.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  build_runner: ^2.4.9
+  drift_dev: ^2.18.0
+  json_serializable: ^6.8.0
+
+dependency_overrides:
+  record_linux:
+    path: record_linux_stub
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/config.json

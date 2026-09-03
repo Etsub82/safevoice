@@ -1,0 +1,57 @@
+{
+  "nav": {
+    "dashboard": "Dashboard",
+    "cases": "Cases",
+    "evidence": "Evidence",
+    "audit": "Audit Log",
+    "admin": "Administration",
+    "logout": "Logout"
+  },
+  "auth": {
+    "login": "Sign In",
+    "username": "Username",
+    "password": "Password",
+    "loginButton": "Sign In",
+    "loggingIn": "Signing in...",
+    "invalidCredentials": "Invalid username or password",
+    "sessionExpired": "Your session has expired. Please sign in again."
+  },
+  "cases": {
+    "title": "Cases",
+    "id": "Case ID",
+    "incidentType": "Incident Type",
+    "riskLevel": "Risk Level",
+    "status": "Status",
+    "submittedAt": "Submitted",
+    "assignedOfficer": "Assigned Officer",
+    "noResults": "No cases found",
+    "high": "High",
+    "medium": "Medium",
+    "low": "Low"
+  },
+  "status": {
+    "Submitted": "Submitted",
+    "Received": "Received",
+    "Triaged": "Triaged",
+    "Assigned": "Assigned",
+    "Investigation": "Under Investigation",
+    "Escalated": "Escalated",
+    "Reassigned": "Reassigned",
+    "ReferredToJustice": "Referred to Justice",
+    "CourtProcess": "Court Process",
+    "Resolved": "Resolved",
+    "Closed": "Closed"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "accessDenied": "You do not have permission to perform this action",
+    "save": "Save",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "delete": "Delete",
+    "search": "Search",
+    "filter": "Filter",
+    "reason": "Reason"
+  }
+}

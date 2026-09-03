@@ -1,0 +1,35 @@
+# ── Flutter ───────────────────────────────────────────────────────────────────
+safevoice_app/build/
+safevoice_app/.dart_tool/
+safevoice_app/.flutter-plugins
+safevoice_app/.flutter-plugins-dependencies
+safevoice_app/android/.gradle/
+safevoice_app/android/local.properties
+safevoice_app/android/app/google-services.json
+
+# ── .NET Backend ──────────────────────────────────────────────────────────────
+safevoice_backend/**/bin/
+safevoice_backend/**/obj/
+safevoice_backend/**/*.user
+safevoice_backend/**/evidence_uploads/
+
+# ── Next.js Portal ────────────────────────────────────────────────────────────
+safevoice_portal/.next/
+safevoice_portal/node_modules/
+
+# ── Python AI ─────────────────────────────────────────────────────────────────
+safevoice_ai/__pycache__/
+safevoice_ai/*.pyc
+safevoice_ai/.venv/
+safevoice_ai/venv/
+
+# ── Secrets — NEVER commit these ─────────────────────────────────────────────
+**/appsettings.Production.json
+safevoice_portal/.env.local
+safevoice_portal/.env.production
+safevoice_portal/.env
+
+# ── OS ────────────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+*.log

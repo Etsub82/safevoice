@@ -1,0 +1,57 @@
+{
+  "nav": {
+    "dashboard": "ዳሽቦርድ",
+    "cases": "ጉዳዮች",
+    "evidence": "ማስረጃ",
+    "audit": "ኦዲት ምዝገባ",
+    "admin": "አስተዳደር",
+    "logout": "ውጣ"
+  },
+  "auth": {
+    "login": "ግባ",
+    "username": "የተጠቃሚ ስም",
+    "password": "የምስጢር ቁልፍ",
+    "loginButton": "ግባ",
+    "loggingIn": "በመግባት ላይ...",
+    "invalidCredentials": "የተጠቃሚ ስም ወይም የምስጢር ቁልፍ ትክክል አይደለም",
+    "sessionExpired": "ክፍለ ጊዜዎ አልቋል። እባክዎ እንደገና ይግቡ።"
+  },
+  "cases": {
+    "title": "ጉዳዮች",
+    "id": "የጉዳይ መለያ",
+    "incidentType": "የክስተት አይነት",
+    "riskLevel": "የአደጋ ደረጃ",
+    "status": "ሁኔታ",
+    "submittedAt": "የቀረበበት ቀን",
+    "assignedOfficer": "የተመደበ ኦፊሰር",
+    "noResults": "ምንም ጉዳዮች አልተገኙም",
+    "high": "ከፍተኛ",
+    "medium": "መካከለኛ",
+    "low": "ዝቅተኛ"
+  },
+  "status": {
+    "Submitted": "ቀርቧል",
+    "Received": "ተቀብሏል",
+    "Triaged": "ተመድቧል",
+    "Assigned": "ተሰጥቷል",
+    "Investigation": "በምርመራ ላይ",
+    "Escalated": "ተሸጋግሯል",
+    "Reassigned": "እንደገና ተሰጥቷል",
+    "ReferredToJustice": "ለፍትህ ተላልፏል",
+    "CourtProcess": "የፍርድ ሂደት",
+    "Resolved": "ተፈቷል",
+    "Closed": "ተዘግቷል"
+  },
+  "common": {
+    "loading": "በመጫን ላይ...",
+    "error": "ስህተት ተከስቷል",
+    "accessDenied": "ይህን ድርጊት ለማከናወን ፈቃድ የሎትም",
+    "save": "አስቀምጥ",
+    "cancel": "ሰርዝ",
+    "confirm": "አረጋግጥ",
+    "delete": "ሰርዝ",
+    "search": "ፈልግ",
+    "filter": "አጣራ",
+    "reason": "ምክንያት"
+  }
+}
