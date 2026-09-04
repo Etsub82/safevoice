@@ -1,6 +1,5 @@
 **/bin/
 **/obj/
 **/*.user
-appsettings.Production.json
-.env
-evidence_uploads/
+**/evidence_uploads/
+# publish/ is intentionally included for Render pre-built deployment

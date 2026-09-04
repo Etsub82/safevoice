@@ -12,6 +12,7 @@ safevoice_backend/**/bin/
 safevoice_backend/**/obj/
 safevoice_backend/**/*.user
 safevoice_backend/**/evidence_uploads/
+# publish/ folder is intentionally tracked — pre-built for Render
 
 # ── Next.js Portal ────────────────────────────────────────────────────────────
 safevoice_portal/.next/
