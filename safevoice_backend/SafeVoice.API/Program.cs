@@ -10,9 +10,29 @@ using SafeVoice.Infrastructure.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Database
+// Database — supports both Npgsql key=value format AND postgres:// URL format (Neon/Render)
+var rawConnStr = builder.Configuration.GetConnectionString("DefaultConnection")
+    ?? Environment.GetEnvironmentVariable("ConnectionStrings__DefaultConnection")
+    ?? "";
+
+// Convert postgres:// URL to Npgsql key=value if needed
+if (rawConnStr.StartsWith("postgres://") || rawConnStr.StartsWith("postgresql://"))
+{
+    var uri = new Uri(rawConnStr);
+    var userInfo = uri.UserInfo.Split(':');
+    var host = uri.Host;
+    var port = uri.Port > 0 ? uri.Port : 5432;
+    var database = uri.AbsolutePath.TrimStart('/');
+    var user = userInfo[0];
+    var password = userInfo.Length > 1 ? userInfo[1] : "";
+    // Parse query params for ssl mode
+    var query = System.Web.HttpUtility.ParseQueryString(uri.Query);
+    var sslMode = query["sslmode"] ?? "Require";
+    rawConnStr = $"Host={host};Port={port};Database={database};Username={user};Password={password};SSL Mode={sslMode};Trust Server Certificate=true;";
+}
+
 builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+    options.UseNpgsql(rawConnStr));
 
 // Services
 builder.Services.AddScoped<IAuthService, AuthService>();
